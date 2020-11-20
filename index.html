@@ -73,15 +73,20 @@
         }
         
         .dibu3 {
+            position:fixed;
+            bottom :0;
+            left: 0;
+            right:0;
             width: 100%;
-            height: 50px;
-            background-color: #F5F6F8;
-            border-radius: 5px;
+            height: 40px;
+            background-color: rgb(44, 140, 240);
+            border-radius: 0px;
             color: #2f343b;
-            line-height: 50px;
+            line-height: 40px;
             text-align: center;
             letter-spacing: 2px;
             margin-top: 10px;
+            
         }
 
         .bd01 input {
@@ -471,6 +476,14 @@
                 overflow-wrap: break-word;
                 word-break: break-all
             }
+            
+            .detail_item__value_1{
+
+                color: #000000
+
+
+            }
+
 
             .leave-detail .detail__item .detail_item__value .detail_item__value--danger[data-v-09009c6b] {
                 color: #ed3f14
@@ -512,7 +525,10 @@
                 right: 0;
                 bottom: 2.4rem;
                 overflow-y: scroll;
-                color: #1c2438
+                color: #1c2438;
+               
+                min-height:100%; // 关键
+                padding-bottom: 200px;  
             }
 
             .bottom-0[data-v-09009c6b] {
@@ -4531,12 +4547,12 @@
                 <div data-v-158d8008="" class="detail__item">
                     <div data-v-158d8008="" class="detail_item__label">开始时间：</div>
                     <div data-v-158d8008="" class="detail_item__value">
-                        2020-10-25 08:17 </div>
+                        2020-11-20 08:17 </div>
                 </div>
                 <div data-v-158d8008="" class="detail__item">
                     <div data-v-158d8008="" class="detail_item__label">结束时间：</div>
                     <div data-v-158d8008="" class="detail_item__value">
-                        2020-10-25 08:17             </div>
+                        2020-11-21 15:00             </div>
                 </div>
                 <div data-v-158d8008="" class="detail__item">
                     <div data-v-158d8008="" class="detail_item__label">审批流程：</div>
@@ -4583,7 +4599,7 @@
                         <div class="yb">
                             <div data-v-158d8008="" class="detail_item__value" id="b01">
 												<span class="sj">
-                                                    10-25 08:22                                                </span>
+                                                    11-19 08:22                                                </span>
                                                 赵宇阳-发起申请</div>
 
 
@@ -4591,7 +4607,7 @@
 
                             <div data-v-158d8008="" class="detail_item__value " id="b02">
 												<span class="sj">
-													10-25 08:22</span>
+													11-19 18:40</span>
 
                                                     一级审批人-审批  <span class="tg">通过</span>
                             </div>
@@ -4624,15 +4640,41 @@
 
 
 
-
+                   
 
                 </div>
-                <div class="dibu">
-                    去销假
-                </div>
-                <div class="dibu3">
+                    
+              
+                <!-- <div class="dibu3">
                     申请续假
+                </div> -->
+
+                
+            </div>
+            <div data-v-158d8008="" class="detail__subtitle02">
+
+            </div>
+
+                <div data-v-158d8008="" class="detail__main">
+                        
+                <div data-v-158d8008="" class="detail__main__header">
+        
+        
+                <span data-v-158d8008="" class="detail__main__header__title sp">销假信息</span>
+                <div data-v-158d8008="" class="detail__item">
+                    <div data-v-158d8008="" class="detail_item__label">附件:</div>
+                    <div data-v-158d8008="" class="detail_item__value"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><title>未标题-1</title><rect width="50" height="50"/></svg></div>
                 </div>
+                    
+                    <div data-v-158d8008="" class="detail__item">
+                    <div data-v-158d8008="" class="detail_item__label">所在位置:</div>
+                    <div data-v-158d8008="" class="detail_item__value_1">北京市北京市大兴区北程庄路</div>      
+                </div>    
+        
+                
+                </div>
+
+
                 <div class="dibu3" onclick="copyValue()">
                     <script src="./请假详情_files/jquery-3.4.1.min.js.下载"></script>
                     <script type="text/javascript">
@@ -4666,15 +4708,18 @@
                     <input type="hidden" value="
 http://api.ruanmu.xyz/demo.php?userName=%E5%90%B4%E5%B2%B1%E9%9C%96&amp;userNum=MTgwNjA2MDQzMw==&amp;sex=55S3&amp;type=55eF5YGH&amp;top=5piv&amp;startTime=ICAgICAgICAgICAgMjAyMC0xMC0yNSAwODoxNw==&amp;endTime=ICAgICAgICAgICAgMjAyMC0xMC0yNiAwOToxNyAgICAgICAgICAgIA==&amp;reason=%E8%85%BF%E9%83%A8%E4%BC%A4%E6%83%85%E5%A4%8D%E6%9F%A5&amp;add=%E4%B8%AD%E5%9B%BD%E7%A6%8F%E5%BB%BA%E7%9C%81%E5%8E%A6%E9%97%A8%E5%B8%82%E7%BF%94%E5%AE%89%E5%8C%BA%E6%96%87%E7%A4%BC%E8%B7%AF&amp;teacher=%E6%B2%88%E5%BB%BA%E8%BE%89&amp;teacher2=%E9%BB%84%E8%8D%A3%E5%AE%87&amp;teacher3=%E5%AD%A6%E9%99%A2%E9%99%A2%E9%95%BF&amp;teacher4=%E8%BE%85%E5%AF%BC%E5%91%98" id="copyInput">
                     <span id="copy"></span>
-
-                    转发
+                        <div style="color:#f8f8f8"> 转发</div>
+                   
                 </div>
                 <!---->
 
 
 
             </div>
+            
         </div>
+
+        
     </div>
 </div>
 
